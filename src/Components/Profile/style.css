@@ -1,0 +1,172 @@
+
+.ProfilePic>img{
+  object-fit: contain;
+  height: 200px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  
+}
+.ProfilePic{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    background-image: linear-gradient(to bottom right, rgb(101, 101, 240),rgb(170, 202, 233), rgb(101, 101, 240));
+}
+
+.Profile{
+    cursor: pointer;
+    border:1px solid rgb(37, 37, 37);
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom right, rgb(19, 19, 19),rgb(26, 26, 26), rgb(19, 19, 19));
+}
+
+.ProfileLink{
+    padding-left: 30px;
+    color: rgb(182, 180, 180);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.Navigate{
+    object-fit: contain;
+    justify-content: center;
+    display: flex;
+    padding-left: 10px;
+    border-radius: 50px;
+    align-items: center;
+    padding:5px;
+    min-width: 80px;
+    transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Info{
+  margin-top: 50px;
+  margin-left: -30px;
+  margin-right: 60px;
+}
+.Info > h1{
+    color: rgb(148, 146, 146);
+}
+.Info > h5{
+    color: rgb(95, 94, 94);
+}
+.Info > p{
+    color: rgb(148, 146, 146);
+}
+.Navigate:hover{
+
+    background-color:rgba(182, 180, 180, 0.09);
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+    .Profile{
+        display: flex;
+    flex-direction: column;
+    margin: 30px;
+    max-width: 90%;
+    font-size: smaller;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    }
+    
+    .ProfilePic>img{
+      object-fit: contain;
+
+
+    }
+    .ProfileLink{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+     
+    }
+    
+    .Info{
+       min-width: 80%;
+       margin-right: -10px;
+       font-size: smaller;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .Profile{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        max-width: 100%;
+        font-size: smaller;
+        justify-content: space-evenly;
+        padding: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .ProfilePic>img{
+      object-fit: contain;
+
+
+    }
+    .ProfileLink{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+     
+    }
+    
+    .Info{
+       min-width: 80%;
+       margin-right: -10px;
+    }
+}
+@media screen and (min-width:769px)  {
+    .ProfilePic{
+        margin-right: 30px;
+    }
+    .Info{
+        font-size: smaller;
+    }
+    .Info>h1{
+        font-size: 30px;
+    }
+    .Profile{
+        margin: 10px;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        justify-content: space-between;
+        height: 300px;
+        width: 500px;
+        font-size: small;
+
+    }
+    .ProfilePic{
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 200px;
+        width: 200px;
+    }
+    .ProfilePic>img{
+        height: 200px;
+        border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+        width:200px;
+    }
+    .ProfileNavigate{
+        margin-top: 190px;
+    }
+   
+}
