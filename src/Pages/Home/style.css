@@ -1,0 +1,85 @@
+#Home{
+     
+    /* border: 1px solid blueviolet; */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.gridMain{
+    display: flex;
+}
+
+.gridMain2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+
+}
+.gridMain3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+    .gridMain{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #Home{
+      
+    }
+    .gridMain3{
+    display: flex;
+    flex-direction: column;
+    
+}
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    .gridMain{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #Home{
+        margin-left: 0px;
+    }
+    .gridMain3{
+    display: flex;
+    flex-direction: column;
+}
+    
+}
+@media screen and (min-width:769px){
+    .gridMain{
+        display: flex;
+        flex-direction: row;
+    min-width: 100%;
+justify-content: center;   
+    }
+  
+    .gridMain3{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+    
+}
+.gridMain2{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+#Home{
+    
+    margin: 30px;
+    padding: 100px;
+}
+}

@@ -1,0 +1,147 @@
+#Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 50%;
+    margin: auto;
+}
+
+.Navigation_Links_Div>ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 10rem;
+    
+}
+#Logo>ul>li{
+    list-style-type: none;
+}
+.Navigation_Links{
+    display: flex;
+    font-size: 17px;
+    font-weight: 600;
+    flex-direction: row;
+    color: rgb(97, 95, 95);
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 30px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+.Navigation_Links:hover{
+    color: white;
+}
+.Lets_Talk_Button{
+    min-width: 100px;
+    text-align: center;
+    padding: 12px;
+     margin-left: -20px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    
+    transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Navigation_Link2_ul>li{
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-right: 40px;
+    
+}
+.Navigation_Links2{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    line-height:2;
+    font-size: 17px;
+    cursor: pointer;
+}
+.Navigation_Link2_ul{
+    max-width: 100%;
+    align-items: center;
+    /* border:1px solid blue; */
+}
+.Navigation_Links2>span{
+    transition: 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+.Navigation_Links2>span:hover,.Navigation_Links2>span:visited{
+ color: white;   
+}
+.hamburger-react>div>div{
+    color: rgb(71, 71, 71);
+    height: 1px !important;
+    width: 30px !important;
+}
+
+
+.Lets_Talk_Button:hover{
+    background-color: white;
+    color: rgb(71, 71, 71);
+}
+
+/* 
+Mobile View
+Mobile S - 320px 
+Mobile M - 375px
+Mobile L - 425px
+Tablet - 768px
+Laptop - 1024px 
+*/
+#Navbar2{
+    display: none;
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+    #Navbar{
+        display: none;
+    }
+    #Navbar2{
+        display: flex;
+        align-items: center;      
+        justify-content: space-between;
+    }
+   
+    #Logo>ul>li>img{
+      height: 15px;  
+      object-fit: contain;
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    #Navbar{
+        display: none;
+    }
+    #Navbar2{
+        display: flex;
+        align-items: center;      
+        justify-content: space-between;
+        min-width: 100%;
+    }
+   
+    #Logo>ul>li>img{
+      height: 15px;  
+      object-fit: contain;
+    }
+    
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    #Logo{
+        margin-left: -55px;
+        margin-right: -50px;
+      }
+      .Navigation_Links_Div{
+            margin-right: -95px;
+      }
+      .Navigation_Links_Div>ul>li{
+        /* border: 1px solid red; */
+      }
+      
+      .Lets_Talk_Button{
+        margin-left: -40px;
+      }
+}
